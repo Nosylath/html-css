@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+    <!-- Lembre-se de usar formatos que vão ser compatíveis com o máximo de navegadores possíveis -->
+    <!-- Aqui foi feito da forma mais simples, mas não muito recomendada pois limita a compatibilidade com navegadores diferentes -->
+    <video src="midia/videodeprogramador.mp4" width="180" autoplay controls poster="Imagens/b41a8acccf85813efcddf1d93061ecc6.jpg" loop></video>
+    <br>
+    <!-- Aqui já usamos o formato usando sources entre a tag para poder usar mais tipos de arquivos e aumentar nossa compatibilidade com o máximo de navegadores -->
+    <video width="180" autoplay controls poster="Imagens/b41a8acccf85813efcddf1d93061ecc6.jpg" loop>
+        <!-- Aqui adicionamos uma thumb para o vídeo usando o parâmetro poster -->
+        <!-- Dica: organize seus arquivos por tamanho, do menor para o maior -->
+        <source src="midia/videodeprogramador.mp4" type="video/mp4">
+        <source src="midia/Videodeprogramador.m4v" type="video/m4v">
+        <source src="midia/videodeprogramador.webm" type="video/webm">
+        <source src="midia/videodeprogramador.ogg" type="video/ogg">
+    </video>
+    <br>
+    <p>Por que este vídeo está diferente?</p>
+    <video src="midia/Videodeprogramador02.mp4" autoplay controls width="180" poster="Imagens/b41a8acccf85813efcddf1d93061ecc6.jpg" loop></video>
+
+    <h1>Inserindo vídeos do YouTube</h1>
+    <!-- Recomenda-se usar sites de hospedagem de vídeos como o YouTube -->
+    <iframe width="300" height="200" src="https://www.youtube.com/embed/FdE5G95B7Mg?si=ngo5Uc4WgmllA7cp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>

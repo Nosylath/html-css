@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: 'Spring Handmade'; /* Nome da fonte correspondente ao arquivo */
+         src: url('../Fontes/SpringHandmade.otf'); /* Verifique o caminho */
+         /* verificado o erro. o uso de ../ resolveu o problema de nao carregar as fontes pois indica que esta em uma pasta diferente ( ../, volte uma e abra outra)  */
+          font-weight: normal;
+          font-style: normal;
+
+
+            /*tipos de format
+            opentype otf
+            truetype ttf
+            embedded-opentype
+            truetype-aat (apple advanced typography) */
+        }
+        body{
+            font-family: 'Spring Handmade';
+        }
+        h1{
+            font-family: 'Spring Handmade', Times, serif, serif;
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lorem.</h1>
+    <h2>Peso e estilo da fonte</h2>
+    <p>fontes externos </p>
+    <p>dafonte</p>
+    <h1>Lorem.</h1>
+    <h2>por enquanto vou ignorar essa aula mas voltarei pra poder entender realmente esse assunto .</p>
+    <h1>Lorem.</h1>
+    <h2>Lorem ipsum dolor sit amet.</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae nemo autem atque ullam velit dolores beatae, praesentium modi repellat ab nam, temporibus laudantium a est nihil ratione sint suscipit! Maxime.</p>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento</title>
+    <style>
+        @font-face {
+            font-family: 'SpringHandmade'; /* Nome da fonte personalizada */
+            src: local('SpringHandmade'), /* Tenta carregar a fonte localmente primeiro */
+                 url('/Fontes/SpringHandmade.woff2') format('woff2'), /* Formato mais eficiente */
+                 url('/Fontes/SpringHandmade.woff') format('woff'),   /* Formato alternativo */
+                 url('/Fontes/SpringHandmade.otf') format('opentype'); /* Formato opentype */
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            font-family: 'SpringHandmade', sans-serif; /* Usa a fonte personalizada */
+        }
+
+        h1 {
+            font-family: 'Mister Grape', 'Times New Roman', Times, serif; /* Fallback para fontes conhecidas */
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi voluptatem maxime totam eveniet vel aliquid rem? Quidem totam sit rem ad doloribus aut eligendi labore laudantium, ea facilis mollitia dolores!</p>
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi voluptatem maxime totam eveniet vel aliquid rem? Quidem totam sit rem ad doloribus aut eligendi labore laudantium, ea facilis mollitia dolores!</p>
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi voluptatem maxime totam eveniet vel aliquid rem? Quidem totam sit rem ad doloribus aut eligendi labore laudantium, ea facilis mollitia dolores!</p>
+</body>
+</html>

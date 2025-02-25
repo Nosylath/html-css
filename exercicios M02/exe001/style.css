@@ -1,0 +1,37 @@
+@charset "UTF-8";
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    /* height: 100%; */
+}
+
+body{
+    background-image: linear-gradient(to top,#0070FA,#2F00FA, #0122FA,#00BFFA,#8100FA,#536AFA);
+    background-attachment: fixed;
+
+}
+main{
+    background-color: white;
+    border-radius: 5px;
+    /* A propriedade CSS arredonda os cantos da borda externa de um elemento. Você pode definir um único raio para fazer cantos circulares, ou dois raios para fazer cantos elípticos.border-radius */
+    box-shadow: 5px 5px 15px #0070FA; 
+    /* A propriedade CSS adiciona efeitos de sombra ao redor do quadro de um elemento. Você pode definir vários efeitos separados por vírgulas. Uma sombra de caixa é descrita por deslocamentos X e Y relativos ao elemento, raio de desfoque e espalhamento e cor. */
+    width: 600px;
+    /* aqui definimos que o main ocuparia apenas 600px da tela  */
+    padding: 10px;
+    /* A propriedade padding define uma a distância entre o conteúdo de um elemento e suas bordas. É um atalho que evita definir uma distância para cada lado separadamente (padding-top, padding-right, padding-bottom, padding-left). */
+    margin: auto;
+    /* A propriedade margin do CSS define a área de margem nos quatro lados do elemento. É uma abreviação que define todas as margens individuais de uma só vez: margin-top, margin-right, margin-bottom, e margin-left */
+}
+h1{
+    color: #2F00FA;
+    text-align: center;
+    text-shadow: 1px 1px 1px #01163188;
+
+}
+h2{
+    color: #0122FA;
+
+}
+p{
+    text-align: justify;
+}

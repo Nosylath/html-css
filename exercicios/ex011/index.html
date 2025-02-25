@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias Dinâmicas</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Tente abrir este site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <!-- A tag picture indica que aqui iremos inserir uma imagem, permitindo também que possamos inserir vários source -->
+        <!-- Lembre-se de sempre usar a ordem correta -->
+        <source media="(max-width: 750px)" srcset="Imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1000px)" srcset="Imagens/foto-m.png" type="image/png">
+        <img src="Imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+    
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio src="midia/Black Magic - Nana Kwabena.mp3" controls autoplay></audio>
+    <!-- Neste exemplo funcionou, mas veremos outras formas -->
+    <!-- Lembrando também dos formatos: MP3, OGG, WAV -->
+    <br>
+    <!-- Na forma usada abaixo vemos algumas diferenças, como o "source src="" entre as tags e não dentro da tag de abertura, possibilitando assim o uso de outros formatos (inseridos para demonstração) -->
+    <audio preload="metadata" autoplay controls loop>
+        <!-- O preload tem três parâmetros: auto, onde ele irá considerar que a página só está carregada quando todo arquivo de áudio estiver carregado; metadata, onde ele carregará as informações prévias sobre o arquivo; e none, que não carregará nada a menos que o usuário dê play no arquivo -->
+        <source src="midia/Black Magic - Nana Kwabena.mp3" type="audio/mpeg">
+        <source src="midia/Black Magic - Nana Kwabena.ogg" type="audio/ogg">
+        <source src="midia/Black Magic - Nana Kwabena.wav" type="audio/wav">
+        <!-- Evite usar os arquivos WAV, estes costumam ser grandes e pesados para seu site -->
+    </audio>
+    <p>Infelizmente seu navegador não consegue reproduzir este arquivo, <a href="midia/Black Magic - Nana Kwabena.mp3">clique aqui para download</a>.</p>
+</body>
+</html>

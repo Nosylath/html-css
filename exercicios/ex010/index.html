@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Links</title>
+</head>
+<body>
+    <h1>Usando Links Externos</h1>
+    <!-- Para adicionar um link você utiliza a tag a (anchor), então você adiciona um parâmetro href -->
+    <p>Você pode acessar o meu <a href="https://github.com/Nosylath" target="_blank" rel="noopener">repositório público no GitHub</a></p>
+    <!-- Adicionando o target="_blank" o link abrirá em uma nova página em branco ao invés de atualizar a atual, rel="noopener" indica que esse é um link externo -->
+    <p>Você pode também acessar o <a href="https://www.youtube.com/channel/UCMs5GirgTZMa1BkPCm5tB0Q" target="_blank" rel="noopener">meu canal no YouTube</a></p>
+    
+    <h2>Usando Links Internos</h2>
+    <p>
+        Esta é a primeira página do site. Se você quiser também acessar a minha 
+        <a href="pag002.html" rel="next" target="_self">segunda página</a>
+        <!-- Para criar acesso a outra página dentro do próprio site precisa apenas indicar como o exemplo pag002.html, o parâmetro rel nesse caso designa-se next indicando próxima página -->
+    </p>
+    <p>Você pode também acessar nossa <a href="noticias/pag003.html" rel="next" target="_self">página de notícias</a></p>
+    <!-- Aqui usamos o valor "_self" indicando que essa página não abrirá em uma nova página mas sim nela mesma -->
+    
+    <h1>Links para Download</h1>
+    <ul>
+        <li><a href="livro/01 - História da Internet.pdf" download="livro/01 - História da Internet.pdf" type="application/pdf">Baixar o livro em PDF</a></li>
+        <li><a href="livro/01 - História da Internet.zip">Livro compactado em ZIP</a></li>
+        <!-- Não precisou dos parâmetros anteriores como download e type, baixou normalmente -->
+    </ul>
+</body>
+</html>

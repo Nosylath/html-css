@@ -1,0 +1,15 @@
+width = largura 
+height = altura 
+
+border = espaço em torno do conteúdo 
+
+padding = espaço entre a borda e o conteúdo 
+
+margin = margem entre elementos 
+
+out line = espaço dentro do margin
+
+tipos de caixaS 
+ box-level = sempre se inicia em uma linha nova e ocupa a largura inteira da tela, div e uma tag exemplo de box-level 
+
+ inline-level = span e um exemplo de inline-level utilizando apenas o espaço necessário permanece na linha e e continua a linha sem quebra.

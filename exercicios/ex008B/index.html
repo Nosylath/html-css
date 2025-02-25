@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+</head>
+<body>
+    <!-- o atalho shift + tab faz o alinhamento do texto ou apenas a tecla tab para tabulação (espaço/margem ) -->
+    <h1>Outras formatações</h1>
+    <h2>Código fonte</h2>
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript</p>
+    <pre><!-- a tag pre mantém as linhas escritas exatamente como estão aqui apresentando elas no navegador -->
+        <code><!-- a tag code indica que se trata de código -->
+            num = int(input('digite um numero '))
+            if num % 2 == 0:
+                print(f'O numero {num} é PAR')
+            else:
+                print(f'O numero {num} é ÍMPAR')
+                print("Fim do programa')
+        </code>
+    </pre>
+    <h2>Citações simples</h2>
+    <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido</q></p>
+    <h2>Citações completas</h2>
+    <p>Segundo Jeff Noble, no seu livro HTML para leigos</p>
+    <!-- para criar uma citação usamos a tag <q> e </q> geralmente usada apenas para frases em meio ao texto, a tag q é semântica e dá sentido de citação -->
+    <blockquote cite="https://books.google.com.br/books?id=BUmXBAAAQBAJ&newbks=0&hl=pt-BR&source=newbks_fb&redir_esc=y">Jeff Noble busca de alguma maneira equilibrar-se entre as funções de diretor designer de usuário em uma empresa de software global, CA Technologies, editor-sócio da Ultrends.com (um blog sobre o que é bom, ruim e feio no design de interface do usuário), e é proprietário da Conquest Media, uma pequena empresa de design de aplicativos na web que fica em Austin, Texas.</blockquote> <!-- já para citações em blocos utilizamos as tags blockquote. o texto ganha um recuo imediatamente. e podemos adicionar um link usando o parâmetro cite -->
+    <h2>Abreviações</h2>
+    <!-- quando você quiser usar uma sigla mas quiser deixar claro do que se trata use a tag <abbr> e </abbr> -->
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando!</p>
+    <h2>Texto invertido</h2>
+    <p><bdo dir="rtl">estou aprendendo a criar coisas em HTML</bdo><!-- use rtl para direita e ltr para esquerda --></p>
+</body>
+</html>
