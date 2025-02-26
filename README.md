@@ -1,5 +1,4 @@
-# html-css
- pasta de estudos do curso em video com guanabara, curso de html e css 
+# HTML & CSS
+Pasta de estudos do Curso em Vídeo com Guanabara, curso de HTML e CSS.
 
-
-pagina de desafio android z
+Página de desafio Android Z.
