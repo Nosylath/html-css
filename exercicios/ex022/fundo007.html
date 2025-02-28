@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+
+      /* Explicação:
+        - Definir o #conteiner como relativo garante que o #conteudo seja posicionado em relação a ele. 
+        Para centralizar o elemento #conteudo dentro do elemento #conteiner usando posicionamento relativo e absoluto, siga estes passos:
+
+        1. Defina a posição do #conteiner como relativa. Isso fará com que ele seja o ponto de referência para os elementos filhos posicionados de forma absoluta.
+        2. Defina a posição do #conteudo como absoluta. Isso permite que você o posicione em relação ao #conteiner.
+        3. Use as propriedades top, left e transform para centralizar o #conteudo dentro do #conteiner.
+        <!-- Explicação:
+        - Definir o #conteiner como relativo garante que o #conteudo seja posicionado em relação a ele.
+        - Definir o #conteudo como absoluto permite que ele seja posicionado em qualquer lugar dentro do #conteiner.
+        - Usar top: 50% e left: 50% move o canto superior esquerdo do #conteudo para o centro do #conteiner.
+        - Usar transform: translate(-50%, -50%) desloca o #conteudo de volta por metade de sua própria largura e altura, centralizando-o efetivamente dentro do #conteiner.
+
+        Aqui está o CSS atualizado:*/
+
+        #conteiner {
+            position: relative; /* Passo 1: Defina a posição como relativa */
+            background-color: purple;
+            height: 95vh;
+            padding: 10px;
+
+        }
+
+        #conteudo {
+            position: absolute; /* Passo 2: Defina a posição como absoluta */
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+            top: 50%; /* Move a borda superior para o centro */
+            left: 50%; /* Move a borda esquerda para o centro */
+            transform: translate(-50%, -50%); /* Passo 3: Ajuste a posição para centralizar o elemento */
+            
+            
+        }
+
+        /*<!-- Explicação:
+        - Definir o #conteiner como relativo garante que o #conteudo seja posicionado em relação a ele.
+        - Definir o #conteudo como absoluto permite que ele seja posicionado em qualquer lugar dentro do #conteiner.
+        - Usar top: 50% e left: 50% move o canto superior esquerdo do #conteudo para o centro do #conteiner.
+        - Usar transform: translate(-50%, -50%) desloca o #conteudo de volta por metade de sua própria largura e altura, centralizando-o efetivamente dentro do #conteiner.
+        */
+        
+    </style>
+</head>
+<body>
+    <section id="conteiner">
+        <article id="conteudo">
+
+        </article>
+    </section>
+    
+</body>
+</html>
